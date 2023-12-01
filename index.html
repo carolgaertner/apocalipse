@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apocalipse:</title>
+   </head>
+<body>
+    <div class="container">
+        <h1><em><strong>Apocalipse:</strong></em></h1> 
+
+         
+        <img src="https://th.bing.com/th/id/OIG.E4PtkAixSWw74qYPfOVx?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" alt="Descrição da Imagem">
+        
+        <!-- Primeira entrada -->
+        <div class="entry">
+            <h2>Mês 1 - O Início do Pesadelo:</h2>
+            <p class="month">Relato:</p>
+            <p>No primeiro mês do apocalipse zumbi, acordei com sirenes ecoando e notícias preocupantes. Minha esposa e eu decidimos fugir da cidade. As ruas estavam caóticas, e os zumbis famintos estavam por toda parte. Encontramos um abrigo temporário, mas a incerteza e o medo dominaram nossos pensamentos.</p>
+        </div>
+        
+        <!-- Segunda entrada -->
+        <div class="entry">
+            <h2>Mês 2 - Buscando Suprimentos:</h2>
+            <p class="month">Relato:</p>
+            <p>No segundo mês, nós nos adaptamos à nova realidade. Saímos em busca de suprimentos, evitando zumbis e outros sobreviventes desesperados. Cada supermercado saqueado e cada fonte de água encontrada eram pequenas vitórias. Aprendemos a ser eficientes e a confiar apenas um no outro.</p>
+        </div>
+
+         <!-- Terceira entrada -->
+         <div class="entry">
+            <h2>Mês 3 - Refúgio em uma Comunidade:</h2>
+            <p class="month">Relato:</p>
+            <p>No terceiro mês, encontramos uma pequena comunidade de sobreviventes. Juntos, fortificamos um local seguro e compartilhamos nossos recursos. Havia algum senso de normalidade, mas sempre com a ameaça de zumbis batendo à nossa porta.</p>
+        </div>
+        
+         <!-- Quarta entrada -->
+         <div class="entry">
+            <h2>Mês 4 - Ataques e Traições:</h2>
+            <p class="month">Relato:</p>
+            <p>No quarto mês, a tensão aumentou na comunidade. Zumbis atacaram e perdemos alguns membros. Além disso, traições de dentro surgiram, tornando evidente que a confiança era rara. Nossa segurança dependia de nossa capacidade de nos defender e de manter a coesão.</p>
+        </div>
+        
+         <!-- Quinta entrada -->
+         <div class="entry">
+            <h2>Mês 5 - Exploração e Descobertas:</h2>
+            <p class="month">Relato:</p>
+            <p>No quinto mês, partimos em missões de exploração. Encontramos outras comunidades, algumas hostis e outras amigáveis. Aprendemos a navegar nesse novo mundo, trocando informações e recursos quando possível. Cada nova descoberta nos lembrava de como a civilização havia mudado.</p>
+        </div>
+        
+         <!-- Sexta entrada -->
+         <div class="entry">
+            <h2>Mês 6 - Esperança e Desespero:</h2>
+            <p class="month">Relato:</p>
+            <p>No sexto mês, encontramos um rádio com notícias de uma possível zona segura. A esperança cresceu, mas o caminho até lá estava cheio de perigos. Passamos por momentos de desespero, mas nossa determinação era inabalável.</p>
+        </div>
+        
+        <!-- Sétima entrada -->
+         <div class="entry">
+            <h2>Mês 7 - A Jornada para a Zona Segura:</h2>
+            <p class="month">Relato:</p>
+            <p>No sétimo mês, decidimos arriscar e nos aventurar em direção à zona segura. Viajamos por territórios infestados de zumbis, enfrentamos escassez de recursos e testamos nossos limites físicos e emocionais. A jornada foi extenuante, mas a esperança de um lugar seguro manteve-nos avançando.</p>
+        </div>
+        
+        <!-- Oitava entrada -->
+         <div class="entry">
+            <h2>Mês 8 - Chegada à Zona Segura:</h2>
+            <p class="month">Relato:</p>
+            <p>No oitavo mês, finalmente chegamos à zona segura. Fomos recebidos por outros sobreviventes que compartilhavam histórias semelhantes de luta e sobrevivência. A sensação de segurança era estranha, mas bem-vinda. Finalmente, podíamos descansar e começar a reconstruir.</p>
+        </div>
+        
+        <!-- Nona - Décima segunda entrada -->
+         <div class="entry">
+            <h2>Mês 9-12 - Reconstrução e Adaptação:</h2>
+            <p class="month">Relato:</p>
+            <p>Nos últimos meses do primeiro ano do apocalipse zumbi, nos concentramos na reconstrução. Aprendemos a cultivar alimentos, a construir defesas e a fortalecer nossos laços na comunidade. Embora o mundo tenha mudado drasticamente, a esperança e a resiliência continuaram a nos guiar enquanto enfrentávamos o futuro incerto.
+
+Cada mês apresentou desafios únicos, mas também oportunidades de crescimento e adaptação em um mundo transformado pelo apocalipse zumbi.</p>
+        </div>
+
+    <div class="container">
+    <br>
+
+      
+
+        <!-- Formulário para adicionar comentários -->
+        <div class="comment-form">
+            <h2>Adicionar Comentário</h2>
+            <form id="comment-form">
+                <input type="text" id="name" placeholder="Seu Nome" required>
+                <textarea id="comment" placeholder="Seu Comentário" required></textarea>
+                <button type="submit">Adicionar Comentário</button>
+            </form>
+        </div>
+
+        <!-- Área para exibir os comentários -->
+        <div class="comments">
+            <h2>Comentários</h2>
+            <ul id="comment-list">
+                <!-- Os comentários serão adicionados aqui -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Adicione a configuração do Firebase (substitua com suas próprias credenciais) -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "SUA_API_KEY",
+            authDomain: "SEU_DOMINIO.firebaseapp.com",
+            databaseURL: "https://SEU_DOMINIO.firebaseio.com",
+            projectId: "SEU_PROJETO_ID",
+            storageBucket: "SEU_BUCKET.appspot.com",
+            messagingSenderId: "SEU_SENDER_ID",
+            appId: "SEU_APP_ID"
+        };
+
+        // Inicialize o Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Referência ao banco de dados do Firebase
+        var database = firebase.database();
+
+        // Evento de envio do formulário
+        document.getElementById('comment-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var name = document.getElementById('name').value;
+            var comment = document.getElementById('comment').value;
+            
+            // Salvar o comentário no Firebase
+            database.ref('comentarios').push({
+                name: name,
+                comment: comment
+            });
+            
+            // Limpar campos do formulário
+            document.getElementById('name').value = '';
+            document.getElementById('comment').value = '';
+        });
+
+        // Carregar e exibir comentários do Firebase
+        var commentList = document.getElementById('comment-list');
+        database.ref('comentarios').on('child_added', function (snapshot) {
+            var commentData = snapshot.val();
+            var listItem = document.createElement('li');
+            listItem.innerHTML = '<strong>' + commentData.name + ':</strong> ' + commentData.comment;
+            commentList.appendChild(listItem);
+        });
+    </script>
+
+    </div>
+</body>
+</html>

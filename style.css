@@ -1,0 +1,35 @@
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #c7cfad;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+.entry {
+    border: 1px solid #732b;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.Relato {
+    font-size: 0.8em;
+    color: #888;
+}
+
+/* Estilos para a imagem */
+img {
+    position: relative;
+    top: 10px;
+    left: 40px;
+    margin: 20px;
+}
+
